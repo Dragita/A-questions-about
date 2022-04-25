@@ -1,0 +1,31 @@
+print("Pro vstup do klubu odpovězte na následující otázky.")
+print("Odpovídej y/n")
+
+# kontrola k první otázce
+
+while True:
+    favorite_books = input("Čteš rád/ráda fantasy? ")
+    if favorite_books == "y" or favorite_books == "n" or favorite_books == "Y" or favorite_books == "N":
+        fantazak = True
+        break
+    else:
+        print("Zadej správnou odpověď y/n")
+
+# kontrola k druhé otázce
+
+while True:
+    like_dragons = input("Máš rád/ráda draky? ")
+    if like_dragons == "y" or like_dragons == "n" or like_dragons == "Y" or like_dragons == "N":
+        dragonlike = True
+        break
+    else:
+        print("Zadej správnou odpověď y/n")
+
+if fantazak and dragonlike:
+    print("Výborně, přidej se k nám")
+elif fantazak:
+    print("Dracijsou taky fajn, nebudeš litovat.")
+elif dragonlike:
+    print("A chtěl/a bys číst fantasy?")
+else:
+    print("Asi sis spletl klub. Sbohem a šáteček.")
